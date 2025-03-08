@@ -16,6 +16,7 @@ import {
   View,
 } from 'react-native';
 
+
 import {
   Colors,
   DebugInstructions,
@@ -23,6 +24,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import MiComponente from './src/components.js/MiComponente';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -50,6 +53,8 @@ function Section({children, title}: SectionProps): React.JSX.Element {
         ]}>
         {children}
       </Text>
+      <Text>Bienvenido a Mi Aplicación</Text>
+    <MiComponente />
     </View>
   );
 }
@@ -127,5 +132,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
+
+
+
 
 export default App;
